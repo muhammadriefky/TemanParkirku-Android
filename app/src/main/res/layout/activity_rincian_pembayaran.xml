@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg_full"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RincianPembayaran">
+    <TextView
+        android:paddingStart="25dp"
+        android:paddingTop="25dp"
+        android:paddingEnd="25dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtRincianPembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rincian Pembayaran"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_marginStart="25dp"
+        android:id="@+id/txtDetailParkir"
+        android:layout_below="@id/txtRincianPembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detail Parkir"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:id="@+id/informasiParkir"
+        android:layout_below="@id/txtDetailParkir"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:background="@drawable/rounded_home"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <TextView
+            android:id="@+id/noPlatTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Plat :"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/waktuMulaiTxt"
+            android:layout_below="@+id/noPlatTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waktu Mulai :"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/tarifParkirTxt"
+            android:layout_below="@+id/waktuMulaiTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarif Parkir / Jam :"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/TotalDurasiTxt"
+            android:layout_below="@+id/tarifParkirTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Durasi :"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:id="@+id/noPlat"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VX 1237 BG"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:id="@+id/waktuMulai"
+            android:layout_below="@id/noPlat"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rabu, 12 Mei 2025 13:00:50"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:id="@+id/tarifParkir"
+            android:layout_below="@id/waktuMulai"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 3000 / jam"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:id="@+id/totalDurasi"
+            android:layout_below="@id/tarifParkir"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120 Menit"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="110dp">
+        <TextView
+            android:layout_marginStart="20dp"
+            android:id="@+id/totalPembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Pembayaran"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/totalBayar"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 6000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBayar"
+            android:layout_width="300dp"
+            android:backgroundTint="#17A4FD"
+            android:background="@drawable/rounded_home"
+            android:layout_height="50dp"
+            android:text="Lanjutkan Pembayaran"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"/>
+    </RelativeLayout>
+</RelativeLayout>

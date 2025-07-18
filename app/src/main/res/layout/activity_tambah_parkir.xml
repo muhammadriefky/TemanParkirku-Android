@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Penjaga.TambahParkir"
+    android:padding="25dp"
+    android:background="@drawable/gradient_bg">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/parking_logo"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-black"/>
+
+    <EditText
+        android:id="@+id/edNoplat"
+        android:elevation="5dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rounded_login"
+        android:hint="Input Nomor Plat"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="@color/black"
+        android:paddingStart="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"/>
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/edTex2"
+        android:elevation="5dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rounded_login"
+        android:hint="Jam Masuk"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingStart="25dp"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:id="@+id/inputJnsKendaraan"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_rounded_login"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/edTex4"
+        android:elevation="5dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rounded_login"
+        android:hint="Tarif"
+        android:textSize="15sp"
+        android:textColorHint="@color/black"
+        android:paddingStart="25dp"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/buttonEdit"
+        android:elevation="10dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#21BEF2"
+        android:layout_centerHorizontal="true"
+        android:hint="Tambah"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textColorHint="@color/black"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>

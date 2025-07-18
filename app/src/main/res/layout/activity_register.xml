@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/gradient_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/selamatDatang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:text="Daftar"
+        android:letterSpacing="0.030"
+        android:textSize="30sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edNamaRegister"
+        android:elevation="5dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/selamatDatang"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rounded_login"
+        android:hint="Nama Lengkap"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingStart="25dp"
+        android:layout_marginTop="50dp"/>
+    <EditText
+        android:id="@+id/edEmailRegister"
+        android:elevation="5dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edNamaRegister"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rounded_login"
+        android:hint="Masukkan Email"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        android:paddingStart="25dp"/>
+
+    <EditText
+        android:elevation="5dp"
+        android:id="@+id/edPasswordRegister"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edEmailRegister"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rounded_login"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:password="true"/>
+
+    <EditText
+        android:id="@+id/edNoRegister"
+        android:elevation="5dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edPasswordRegister"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rounded_login"
+        android:hint="No.Telepon"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        android:paddingStart="25dp"/>
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edNoRegister"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="kembali ke halaman login"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="50dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtRegister"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_rounded_login"
+        android:backgroundTint="#3DB3FC"/>
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

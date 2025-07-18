@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/gradient_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/selamatDatang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+        android:text="Silahkan Login"
+        android:letterSpacing="0.030"
+        android:textSize="20sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edText1"
+        android:elevation="5dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/selamatDatang"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rounded_login"
+        android:hint="Masukkan Email"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:paddingStart="25dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:elevation="5dp"
+        android:id="@+id/edText2"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edText1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_rounded_login"
+        android:hint="Password"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:paddingLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:password="true"/>
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edText2"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="70dp"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtRegister"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@drawable/bg_rounded_login"
+        android:backgroundTint="#3DB3FC"/>
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
